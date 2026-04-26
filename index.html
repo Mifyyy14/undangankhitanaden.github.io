@@ -32,23 +32,18 @@
 </audio>
 
 <!-- Floating Controls -->
-<div class="floating-controls" id="controls">
-    <!-- Music Toggle Button -->
+<div class="floating-controls hidden" id="controls">
     <button class="control-btn" onclick="toggleMusic()" title="Musik" aria-label="Toggle Music">
         <i id="musicIcon" class="fas fa-music"></i>
     </button>
-
-    <!-- Fullscreen Toggle Button -->
     <button class="control-btn" onclick="toggleFullscreen()" title="Fullscreen" aria-label="Toggle Fullscreen">
         <i id="fsIcon" class="fas fa-expand"></i>
     </button>
-
-    <!-- Refresh Data Button -->
     <button class="control-btn refresh-btn" onclick="refreshGuestData()" title="Refresh Data">
         <i class="fas fa-sync-alt"></i>
     </button>
 </div>
-
+    
 <!-- Cover/Overlay -->
 <div id="overlay">
     <div class="container" style="z-index: 101;">
