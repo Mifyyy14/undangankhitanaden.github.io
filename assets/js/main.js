@@ -61,21 +61,32 @@ if (rsvpForm) {
 
 // ===================== OPEN INVITATION =====================
 function bukaUndangan() {
+    // Mulai memutar musik jika diizinkan
     bgMusic.play().catch(() => {});
+
+    // Sembunyikan overlay dengan menambahkan "hidden"
     overlay.classList.add('hidden');
+
+    // Tampilkan konten utama setelah overlay hilang
     setTimeout(() => {
         mainContent.classList.add('visible');
-    }, 50);
-    controls.classList.remove('hidden');
-    
-    // Scroll to top
+        controls.classList.remove('hidden'); // Pastikan Floating Controls muncul
+    }, 100); // Tunggu sebentar agar transisi overlay selesai
+
+    // Scroll ke atas halaman untuk kenyamanan
     setTimeout(() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
-    
+    }, 200);
+
+    // Segarkan animasi AOS
     AOS.refresh();
 }
 
+// ===================== HIDE FLOATING CONTROLS BY DEFAULT =====================
+window.addEventListener('load', () => {
+    // Sembunyikan kontrol saat halaman pertama kali dimuat
+    controls.classList.add('hidden');
+});
 // ===================== TOGGLE MUSIC =====================
 function toggleMusic() {
     if (bgMusic.paused) {
