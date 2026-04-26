@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Undangan Walimatul Khitan Diendra Maulana Syakir - Momen istimewa acara khitanan putra kami">
+    <meta name="theme-color" content="#1a1a1a">
+    <meta property="og:title" content="Walimatul Khitan Diendra Maulana Syakir">
+    <meta property="og:description" content="Kami dengan bangga mengundang Anda ke acara istimewa ini">
+    <meta property="og:type" content="website">
+    
+    <title>Walimatul Khitan - Diendra Maulana Syakir</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Audio Background -->
+<audio id="bgMusic" loop preload="auto" style="display: none;">
+    <source src="assets/audio/Musik1.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Floating Controls -->
+<div class="floating-controls" id="controls">
+    <!-- Music Toggle Button -->
+    <button class="control-btn" onclick="toggleMusic()" title="Musik" aria-label="Toggle Music">
+        <i id="musicIcon" class="fas fa-music"></i>
+    </button>
+
+    <!-- Fullscreen Toggle Button -->
+    <button class="control-btn" onclick="toggleFullscreen()" title="Fullscreen" aria-label="Toggle Fullscreen">
+        <i id="fsIcon" class="fas fa-expand"></i>
+    </button>
+
+    <!-- Refresh Data Button -->
+    <button class="control-btn refresh-btn" onclick="refreshGuestData()" title="Refresh Data">
+        <i class="fas fa-sync-alt"></i>
+    </button>
+</div>
+
+<!-- Cover/Overlay -->
+<div id="overlay">
+    <div class="container" style="z-index: 101;">
+        <div class="text-center">
+            <div class="mb-6" data-aos="zoom-in" style="margin-bottom: 1.5rem;">
+                <span class="badge-khitan">
+                    <i class="fas fa-leaf mr-2" style="font-size: 0.7rem;"></i> Walimatul Khitan <i class="fas fa-leaf ml-2" style="font-size: 0.7rem;"></i>
+                </span>
+            </div>
+
+            <p class="uppercase tracking-widest text-xs mb-4 opacity-80" style="color: var(--text-primary); letter-spacing: 0.1em; margin-bottom: 1rem;">
+                <i class="fas fa-crescent mr-2" style="font-size: 0.85rem;"></i> Assalamu'alaikum wa Rahmatullahi wa Barakatuh
+            </p>
+
+            <h1 class="font-playfair mb-4" data-aos="fade-up" data-aos-delay="100" style="margin-bottom: 1rem;">
+                Diendra Maulana Syakir <br>(Aden)
+            </h1>
+
+
+
+            <p class="text-sm mb-8 opacity-85" data-aos="fade-up" data-aos-delay="300" style="color: var(--text-primary); line-height: 1.7; margin-bottom: 2rem;">
+                Dengan segala kerendahan hati dan syukur kepada Allah SWT, <br> kami mengundang Anda merayakan momen istimewa putra kami
+            </p>
+
+            <button onclick="bukaUndangan()" class="btn-primary pulse-btn" data-aos="zoom-in" data-aos-delay="400">
+                <i class="fas fa-envelope-open-text"></i>
+                <span>BUKA UNDANGAN</span>
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<main id="mainContent">
+
+    <!-- Section 1: Opening -->
+    <section class="section-dark">
+        <div class="container" data-aos="fade-up">
+            <div style="max-width: 850px; margin: 0 auto;">
+                <div class="text-center">
+                    <p class="font-islamic mb-4" style="color: var(--gold-light); letter-spacing: 0.08em; margin-bottom: 1rem;">
+                        بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+                    </p>
+                    <p class="text-sm italic mb-6" style="color: var(--text-primary); opacity: 0.85; letter-spacing: 0.03em; margin-bottom: 1.5rem;">
+                        Dengan Menyebut Nama Allah Yang Maha Pengasih Lagi Maha Penyayang
+                    </p>
+
+                    <h2 class="font-playfair mb-8">
+                        Acara Walimatul Khitan
+                    </h2>
+
+                    <div style="background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 1rem; padding: 2rem 1.5rem; backdrop-filter: blur(10px);" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-sm italic mb-6" style="color: var(--text-primary); line-height: 1.8; margin-bottom: 1.5rem;">
+                            <i class="fas fa-quote-left mr-2" style="color: var(--gold-primary); opacity: 0.6;"></i>
+                            Lima hal termasuk fitrah: Khitan, mencukur bulu kemaluan, potong kuku, mencabut bulu ketiak, dan memangkas kumis." (HR. Bukhari no. 5889 & Muslim no. 257)
+                            <i class="fas fa-quote-right ml-2" style="color: var(--gold-primary); opacity: 0.6;"></i>
+                        </p>
+                        <p class="text-sm" style="color: var(--text-primary); line-height: 1.8;">
+                            Kami memohon doa dan dukungan Anda dalam menyambut pelaksanaan khitanan putra kami, sebagai bentuk rasa syukur kepada Allah SWT. Semoga Allah swt menerima amal dan doa dari Anda semua, dan memberikan berkah serta rahmat untuk Aden.
+                        </p>
+                    </div>
+
+                    <div class="mt-8" style="margin-top: 2.5rem; text-align: center; color: var(--gold-light); animation: float 3s ease-in-out infinite;">
+                        <i class="fas fa-chevron-down" style="font-size: 1.5rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Profile Child -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-title-wrapper" data-aos="fade-down">
+                <h2 class="font-playfair">Putra Kami</h2>
+                <p class="section-subtitle">Berkah dan Anugerah dari Allah SWT</p>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; max-width: 1000px; margin: 0 auto; align-items: center;" data-aos="fade-up">
+                <!-- Photo -->
+                <div data-aos="fade-right" data-aos-duration="1000">
+                    <div class="profile-frame">
+                        <img src="assets/images/Foto_Keluarga.jpg" alt="Diendra Maulana Syakir">
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div data-aos="fade-left" data-aos-duration="1000">
+                    <h3 class="font-playfair mb-8" style="font-size: 2rem; text-align: center;">Diendra Maulana Syakir</h3>
+                    <h3 class="font-playfair mb-8" style="font-size: 2rem; text-align: center;">(Aden)</h3>
+
+                    <div class="card" data-aos="fade-up" data-aos-delay="100" style="margin-bottom: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem;">
+                            <div class="card-icon" style="margin-bottom: 0; width: 3rem; height: 3rem;">
+                                        <img src="assets/images/Mother.png" class="icon" style="width: 100px; height:100px; object-fit:contain;" alt="heart">
+                                    </div>
+                            <p class="text-sm font-bold uppercase" style="color: var(--gold-light); letter-spacing: 0.5em;">PUTRA DARI</p>
+                        </div>
+                        <h3 class="text-sm font-cormorant" style="color: var(--text-primary); line-height: 1.8; margin: 0;">
+                            Bapak Sambas Andiyanta<br>
+                            Ibu Ratih Choerunnisa
+                        </h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Event Schedule -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-title-wrapper" data-aos="fade-down">
+                <h2 class="font-playfair">Rangkaian Acara</h2>
+                <p class="section-subtitle">Harap Hadir dan Berkenan Merayakan Bersama Kami</p>
+            </div>
+
+             <!-- Countdown Timer -->
+            <div style="margin-bottom: 3rem;" data-aos="zoom-in">
+                <h3 class="text-center font-playfair mb-6" style="font-size: clamp(1rem, 4vw, 1.3rem);">
+                    <i class="fas fa-hourglass-end mr-2"></i> Perhitungan Waktu
+                </h3>
+                <div class="countdown-container">
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="days">00</div>
+                        <div class="countdown-label">Hari</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="hours">00</div>
+                        <div class="countdown-label">Jam</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="minutes">00</div>
+                        <div class="countdown-label">Menit</div>
+                    </div>
+                    <div class="countdown-box">
+                        <div class="countdown-number" id="seconds">00</div>
+                        <div class="countdown-label">Detik</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Grid -->
+            <div class="events-grid">
+                <!-- Hari Rabu: Hiburan Seni -->
+                <div class="card" data-aos="fade-up">
+                    <div class="card-icon">
+                        <img src="assets/images/Lion.png" class="icon" style="width: 100px; height:100px; object-fit:contain;" alt="heart">
+                    </div>
+                    <h3 class="font-playfair mb-5" style="font-size: 1.2rem;">Hiburan Seni Singa Depok</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.9rem;">
+                        <p style="color: var(--text-primary);">
+                            <i class="fas fa-calendar-alt mr-2" style="color: var(--gold-primary); width: 1rem; text-align: center;"></i> 
+                            <strong style="color: var(--gold-light);">Hari Rabu, 06 Mei 2026</strong>
+                        </p>
+                        <p style="color: var(--text-primary);">
+                            <i class="fas fa-clock mr-2" style="color: var(--gold-primary); width: 1rem; text-align: center;"></i> 
+                            <span>Siang hingga Sore hari</span>
+                        </p>
+                        <p style="color: var(--text-primary);">
+                            <i class="fas fa-map-marker-alt mr-2" style="color: var(--gold-primary); width: 1rem; text-align: center;"></i> 
+                            <strong style="color: var(--gold-light);">BTN</strong>
+                        </p>
+                        <p class="text-xs italic" style="color: var(--text-primary); opacity: 0.75; margin-left: 1.5rem;"> </p>
+                    </div>
+                </div>
+
+                <!-- Hari Kamis: Resepsi -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3 class="font-playfair mb-5" style="font-size: 1.2rem;">Resepsi Khitanan</h3>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem; font-size: 0.9rem;">
+                        <p style="color: var(--text-primary);">
+                            <i class="fas fa-calendar-alt mr-2" style="color: var(--gold-primary); width: 1rem; text-align: center;"></i> 
+                            <strong style="color: var(--gold-light);">Hari Kamis, 07 Mei 2026</strong>
+                        </p>
+                        <p style="color: var(--text-primary);">
+                            <i class="fas fa-clock mr-2" style="color: var(--gold-primary); width: 1rem; text-align: center;"></i> 
+                            <span>09:00 WIB - Selesai</span>
+                        </p>
+                        <p style="color: var(--text-primary);">
+                            <i class="fas fa-map-marker-alt mr-2" style="color: var(--gold-primary); width: 1rem; text-align: center;"></i> 
+                            <strong style="color: var(--gold-light);">Kp. Cihonje RT 03/01 Komplek BTN</strong>
+                        </p>
+                        <p class="text-xs italic" style="color: var(--text-primary); opacity: 0.75; margin-left: 1.5rem;">Desa Wargaluyu, Kec. Arjasari</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Bank Account -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="section-title-wrapper" data-aos="fade-down">
+                <h2 class="font-playfair">Nomor Rekening</h2>
+                <p class="section-subtitle">Jika ingin membantu secara finansial</p>
+            </div>
+
+            <div style="max-width: 700px; margin: 0 auto;" data-aos="fade-up">
+                <!-- BCA Account -->
+                <div class="bank-account" data-aos="fade-up" data-aos-delay="0">
+                    <h4>
+                        <i class="fas fa-building" style="color: var(--gold-light);"></i> Bank BCA
+                    </h4>
+                    <div class="bank-account-info">
+                        <i class="fas fa-credit-card"></i>
+                        <span style="color: var(--text-primary);">Nomor Rekening:</span>
+                        <span class="bank-account-number">2790346885</span>
+                        <i class="fas fa-copy bank-account-copy" onclick="copyToClipboard('2790346885')" title="Salin nomor rekening"></i>
+                    </div>
+                    <div class="bank-account-info">
+                        <i class="fas fa-user"></i>
+                        <span style="color: var(--text-primary);">Atas Nama:</span>
+                        <span style="color: var(--gold-light); font-weight: 600;">RATIH CHOERUNNISA</span>
+                    </div>
+                </div>
+
+                <!-- BJB Account -->
+                <div class="bank-account" data-aos="fade-up" data-aos-delay="100">
+                    <h4>
+                        <i class="fas fa-building" style="color: var(--gold-light);"></i> Bank BJB
+                    </h4>
+                    <div class="bank-account-info">
+                        <i class="fas fa-credit-card"></i>
+                        <span style="color: var(--text-primary);">Nomor Rekening:</span>
+                        <span class="bank-account-number">0135902934100</span>
+                        <i class="fas fa-copy bank-account-copy" onclick="copyToClipboard('0135902934100')" title="Salin nomor rekening"></i>
+                    </div>
+                    <div class="bank-account-info">
+                        <i class="fas fa-user"></i>
+                        <span style="color: var(--text-primary);">Atas Nama:</span>
+                        <span style="color: var(--gold-light); font-weight: 600;">RATIH CHOERUNNISA</span>
+                    </div>
+                </div>
+
+                <div style="background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 0.8rem; padding: 1rem; margin-top: 1.5rem; text-align: center; backdrop-filter: blur(10px);" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-sm italic" style="color: var(--text-primary);"> 
+                        Terima kasih atas segala dukungan dan bantuan Anda
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: RSVP & Wishes -->
+    <section class="section-dark">
+        <div class="container" style="max-width: 900px;">
+            <div class="card" data-aos="fade-up">
+                <div class="section-title-wrapper">
+                    <h2 class="font-playfair">Konfirmasi Kehadiran</h2>
+                    <p class="section-subtitle">Bantu Kami Mempersiapkan Acara dengan Sebaik-Baiknya</p>
+                </div>
+
+                <!-- Guest Statistics -->
+                <div id="guestStats" class="stats-grid hidden" style="margin-bottom: 2rem;">
+                    <div class="stat-box">
+                        <div class="stat-number" id="countHadir">0</div>
+                        <div class="stat-label">Akan Hadir</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" id="countTidakHadir">0</div>
+                        <div class="stat-label">Tidak Hadir</div>
+                    </div>
+                </div>
+
+                <!-- RSVP Form -->
+                <form id="rsvpForm" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div class="form-group">
+                        <label><i class="fas fa-user mr-1" style="color: var(--gold-primary);"></i> Nama Lengkap <span style="color: #ef4444;">*</span></label>
+                        <input type="text" id="name" required placeholder="Masukkan nama lengkap Anda" maxlength="100">
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt mr-1" style="color: var(--gold-primary);"></i> Alamat <span style="color: #ef4444;">*</span></label>
+                        <textarea id="address" required placeholder="Masukkan alamat lengkap Anda" maxlength="200"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-check-circle mr-1" style="color: var(--gold-primary);"></i> Status Kehadiran <span style="color: #ef4444;">*</span></label>
+                        <div class="radio-group" id="statusGroup">
+                            <label class="radio-option">
+                                <input type="radio" name="status" value="Akan Hadir" required>
+                                <span class="text-sm">Akan Hadir</span>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="status" value="Tidak Hadir" required>
+                                <span class="text-sm">Tidak Hadir</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                        <i class="fas fa-paper-plane"></i> KIRIM KONFIRMASI
+                    </button>
+                </form>
+
+                <!-- Wishes Display -->
+                <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid rgba(212, 175, 55, 0.2);">
+                    <div class="text-center mb-4">
+                        <h3 class="font-playfair" style="font-size: 1.2rem; margin-bottom: 0.3rem;">
+                            Daftar Tamu
+                        </h3>
+                        <p class="section-subtitle">Terima Kasih Atas Konfirmasi Kehadiran Anda</p>
+                    </div>
+                    <div id="wishContainer" style="display: flex; flex-direction: column; gap: 0.8rem; max-height: 400px; overflow-y: auto; padding-right: 0.5rem;">
+                        <div class="text-center text-sm" style="color: var(--text-primary); opacity: 0.5; padding: 1.5rem 0;">
+                            <p>Memuat daftar tamu...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom text-center">
+                
+                <h3 class="font-playfair mb-2">
+                    ...<br>
+                     Diendra Maulana Syakir
+                </h3>
+
+                <p class="italic" style="color: rgba(245, 230, 211, 0.7); font-size: 0.9rem;">
+                    Semoga menjadi awal yang baik untuk masa depan Diendra yang cerah dan penuh berkah 💚
+                </p>
+
+                <p class="arabic" style="margin: 0.8rem 0; font-size: 0.95rem;">
+                    الْحَمْدُ لِلَّهِ الَّذِي أَنْزَلَ عَلَيْنَا نِعَمَهُ
+                </p>
+
+                <p style="font-size: 0.8rem; opacity: 0.7;">
+                    &copy; 2026 @MIHAF_37
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+        <!-- Hidden Admin Panel (Akses via console) -->
+    <script>
+        // Admin console commands
+        window.adminPanel = {
+            // View all guests
+            viewGuests: async () => {
+                const guests = await getGuestsData();
+                console.table(guests);
+                return guests;
+            },
+            
+            // Export to CSV
+            exportCSV: () => {
+                exportDataToCSV();
+            },
+            
+            // Clear all data
+            clearData: () => {
+                clearGuestsData();
+            },
+            
+            // Add guest manually
+            addGuest: async (name, address, status) => {
+                const formData = {
+                    name: name,
+                    address: address,
+                    status: status,
+                    timestamp: new Date().toISOString()
+                };
+                await saveGuest(formData);
+                await loadWishes();
+                console.log('Guest added successfully');
+            },
+            
+            // Get statistics
+            getStats: async () => {
+                const guests = await getGuestsData();
+                const hadir = guests.filter(g => g['Status'] === 'Akan Hadir').length;
+                const tidakHadir = guests.filter(g => g['Status'] === 'Tidak Hadir').length;
+                return {
+                    totalGuests: guests.length,
+                    hadir: hadir,
+                    tidakHadir: tidakHadir
+                };
+            }
+        };
+        
+        console.log('🎉 Admin Panel tersedia. Ketik adminPanel.viewGuests() di console');
+    </script>
+</main>
+
+<!-- Scripts Library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Custom Scripts -->
+<script src="assets/js/main.js"></script>
+<script src="assets/js/countdown.js"></script>
+<script src="assets/js/form.js"></script>
+<script src="assets/js/storage.js"></script>
+
+</body>
+</html>
