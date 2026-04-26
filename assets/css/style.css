@@ -143,6 +143,11 @@ body::before {
     font-weight: 700;
 }
 
+/* Floating Controls Default Hidden */
+.hidden {
+    display: none !important;
+}
+
 /* Hover dan animasi tombol */
 .control-btn:hover {
     transform: scale(1.1);
